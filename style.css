@@ -1,0 +1,40 @@
+/* 1. Navbar'daki Logo için soldan boşluk (Ödev isteği: 192px) */
+.logo {
+    margin-left: 192px;
+}
+
+/* 2. Arama kutusuna büyüteç ikonu ekleme */
+/* Not: Bilgisayarında 'assets' klasöründe bir arama ikonu olmalı. Yoksa burası boş görünür */
+.search-input::placeholder {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f002"; /* FontAwesome büyüteç ikonu kodu */
+    text-align: center;
+}
+
+/* 3. Hikayeler Alanı (Middle Area) Kuralları */
+.middlearea {
+    height: 110px; /* Kartın kendi yüksekliği */
+    max-height: 200px !important; /* Ödevdeki important kuralı */
+    overflow-x: auto; /* Yan yana taşarsa kaydırma özelliği */
+    overflow-y: hidden;
+}
+
+/* Hikaye resimlerinin etrafındaki o renkli Instagram halkası için basit bir hile */
+.story-img {
+    padding: 2px;
+    border: 2px solid #e1306c; /* Instagram pembesi */
+}
+
+/* 4. Sağ Panel Sabitleme (Sticky Sidebar) */
+.stickysidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px; /* Navbar'ın altından başlayacak mesafe */
+}
+
+/* 5. Sağ Panel Görünümü */
+.rightpanel {
+    background-color: white;
+    border: none !important; /* Kenarlık olmasın kuralı */
+}
